@@ -1,15 +1,38 @@
 {
-  "name": "app",
-  "private": true,
-  "version": "0.0.0",
+  "name": "fast-webgl",
+  "private": false,
+  "version": "0.0.1",
+  "author": "Tom Fan",
+  "sideEffects": false,
+  "keywords": [
+    "webgl",
+    "typescript",
+    "vite"
+  ],
+  "description": "A library for using WebGL in a fast and easy way.",
+  "license": "MIT",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomfanhm/fast-webgl.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^22.5.5",
+    "prettier-plugin-organize-imports": "^4.0.0",
     "typescript": "^5.5.3",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.1",
+    "vite-tsconfig-paths": "^5.0.1"
   }
 }
